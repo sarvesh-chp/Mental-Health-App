@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Mental_Health_App2</string>
+    <string name="TEST">test</string>
+    <string name="test_your_mental_health">TEST YOUR MENTAL HEALTH</string>
+    <string name="press_the_test_button_to_test_your_mental_health">Press the TEST button to test your mental health :-</string>
+    <string name="all_of_the_time">All of the time</string>
+    <string name="ana" >You have a/an</string>
+</resources>

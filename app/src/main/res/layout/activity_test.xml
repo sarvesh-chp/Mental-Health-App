@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C3DCA6"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/loginscrn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="MENTAL HEALTH CHECKER"
+            android:textAlignment="center"
+            android:textColor="#FF0000"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ONE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="1) I have been feeling optimistic about the future."
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            android:background:"@drawable/round_background"
+            android:backgroundTint:#ffffff
+
+            <RadioButton
+                android:id="@+id/b1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:onClick="checkButton"
+                android:text="@string/all_of_the_time" />
+
+            <RadioButton
+                android:id="@+id/b2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="Some of the time" />
+
+            <RadioButton
+                android:id="@+id/b3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="None of the time" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/TWO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="2) I have been feeling useful."
+            android:textColor="@color/black" />
+
+        <RadioGroup
+            android:id="@+id/r2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/b4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:onClick="checkButton"
+                android:text="@string/all_of_the_time" />
+
+            <RadioButton
+                android:id="@+id/b5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="Some of the time" />
+
+            <RadioButton
+                android:id="@+id/b6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="None of the time" />
+
+        </RadioGroup>
+
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/THREE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="3) I have been feeling relaxed."
+            android:textColor="@color/black" />
+
+        <RadioGroup
+            android:id="@+id/r3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/b7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:onClick="checkButton"
+                android:text="@string/all_of_the_time" />
+
+            <RadioButton
+                android:id="@+id/b8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="Some of the time" />
+
+            <RadioButton
+                android:id="@+id/b9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="None of the time" />
+
+        </RadioGroup>
+
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/FOUR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="4) I have been feeling interested in other people."
+            android:textColor="@color/black" />
+
+        <RadioGroup
+            android:id="@+id/r4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/b10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:onClick="checkButton"
+                android:text="@string/all_of_the_time" />
+
+            <RadioButton
+                android:id="@+id/b11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="Some of the time" />
+
+            <RadioButton
+                android:id="@+id/b12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="None of the time" />
+
+        </RadioGroup>
+
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/FIVE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="5) I have had energy to spare."
+            android:textColor="@color/black" />
+
+        <RadioGroup
+            android:id="@+id/r5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/b13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:onClick="checkButton"
+                android:text="@string/all_of_the_time" />
+
+            <RadioButton
+                android:id="@+id/b14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="Some of the time" />
+
+            <RadioButton
+                android:id="@+id/b15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="None of the time" />
+
+        </RadioGroup>
+
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/SIX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="6) I have been dealing with problems well."
+            android:textColor="@color/black" />
+
+        <RadioGroup
+            android:id="@+id/r6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/b16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:onClick="checkButton"
+                android:text="@string/all_of_the_time" />
+
+            <RadioButton
+                android:id="@+id/b17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="Some of the time" />
+
+            <RadioButton
+                android:id="@+id/b18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="None of the time" />
+
+        </RadioGroup>
+
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/SEVEN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="7) I have been thinking clearly."
+            android:textColor="@color/black" />
+
+        <RadioGroup
+            android:id="@+id/r7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/b19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:onClick="checkButton"
+                android:text="@string/all_of_the_time" />
+
+            <RadioButton
+                android:id="@+id/b20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="Some of the time" />
+
+            <RadioButton
+                android:id="@+id/b21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="None of the time" />
+
+        </RadioGroup>
+
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/EIGHT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="8) I have been feeling good about myself."
+            android:textColor="@color/black" />
+
+        <RadioGroup
+            android:id="@+id/r8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/b22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:onClick="checkButton"
+                android:text="@string/all_of_the_time" />
+
+            <RadioButton
+                android:id="@+id/b23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="Some of the time" />
+
+            <RadioButton
+                android:id="@+id/b24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="None of the time" />
+
+        </RadioGroup>
+
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/NINE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="9) I have been interested in new things."
+            android:textColor="@color/black" />
+
+        <RadioGroup
+            android:id="@+id/r9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/b25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:onClick="checkButton"
+                android:text="@string/all_of_the_time" />
+
+            <RadioButton
+                android:id="@+id/b26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="Some of the time" />
+
+            <RadioButton
+                android:id="@+id/b27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="None of the time" />
+
+        </RadioGroup>
+
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/TEN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="10) I have been feeling confident."
+            android:textColor="@color/black" />
+
+        <RadioGroup
+            android:id="@+id/r10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/b28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:onClick="checkButton"
+                android:text="@string/all_of_the_time" />
+
+            <RadioButton
+                android:id="@+id/b29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="Some of the time" />
+
+            <RadioButton
+                android:id="@+id/b30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="None of the time" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="SUBMIT" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+
+    </LinearLayout>
+</ScrollView>
